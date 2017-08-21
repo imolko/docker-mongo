@@ -1,4 +1,4 @@
-FROM mongo:3.0
+FROM mongo:3.4
 
 MAINTAINER Yohany Flores <yohanyflores@gmail.com>
 
@@ -14,9 +14,6 @@ RUN apt-get update \
 		ca-certificates curl \
 		numactl \
 	&& rm -rf /var/lib/apt/lists/*
-
-# Instalamos cliente bash para rabbitmq
-RUN set -x && apt-get update && apt-get install -y amqp-tools --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 # Copiamos los scripts para la configuracion de elastic.
 COPY scripts /scripts
