@@ -1,4 +1,4 @@
-FROM mongo:3.2
+FROM mongo:3.4
 
 MAINTAINER Yohany Flores <yohanyflores@gmail.com>
 
