@@ -1,2 +1,2 @@
 # docker-mongo
-Imagen de mongo para nuestros proyectos.
+Imagen de mongo 3.4 para nuestros proyectos.
